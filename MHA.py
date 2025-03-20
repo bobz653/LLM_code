@@ -1,4 +1,4 @@
-class mha(nn):
+class mha(nn.module):
   def __init__(self,headnum, hiddensize):
     self.q_proj = nn.linear(hiddensize, hiddensize)
     self.k_proj = nn.linear(hiddensize, hiddensize)
